@@ -1,0 +1,151 @@
+// INTRO SECTION
+.intro-section {
+  background-color: #F2F2F2;
+  height: 610px;
+  position: relative;
+  z-index: 1;
+}
+
+.intro__content {
+  max-width: 447px;
+  margin-bottom: 170px;
+  transform: translateY(-60px);
+}
+
+.intro__title {
+  margin: 0;
+  font-weight: 100;
+  font-size: 56px;
+  line-height: 64px;
+  letter-spacing: -1px;
+  color: $color-text-dark;
+}
+
+.intro__text {
+  margin-top: 24px;
+  margin-bottom: 36px;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: -0.28125px;
+  color: $color-text;
+}
+
+.intro-section__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.intro__content__right {
+  width: 320px;
+}
+.intro__content__right {
+  background-image: url(/images/hero-phones-desktop.png), url(/images/hero-bg-desktop.png);
+
+  width: 810px;
+  height: 920px;
+  background-repeat: no-repeat;
+  background-size: 580px 820px,755px 750px;
+  background-position: 120px 0px, -55px -20px;
+  transform: translate(150px, -50px);
+}
+.intro__background {
+  display: none;
+  background-image: url(/images/bac.svg);
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover;
+  
+}
+// responsive
+@include breakpoint-between (1000px,1500px) {
+  .intro__content__right {
+    margin-right: 0px;
+    transform: translateX(100px);
+  }
+ 
+  .intro__content {
+    max-width: 300px;
+    
+  }
+  .intro__title {
+    margin: 0;
+    font-weight: 100;
+    font-size: 35px;
+    line-height: 64px;
+    letter-spacing: -1px;
+    color: $color-text-dark;
+  }
+  
+  .intro__text {
+    margin-top: 24px;
+    margin-bottom: 36px;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: -0.28125px;
+    color: $color-text;
+  }
+}
+
+
+// responsive__too
+@include breakpoint-between (1000px,1140px) {
+  .intro__content__right {
+    margin-right: 0px;
+  }
+}
+@include breakpoint-down (1000px) {
+  .container {
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .intro-section {
+    background-color: #F2F2F2;
+    height: 1100px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .intro-section__container{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .intro__background {
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+   display: block;
+  
+  }
+  .intro__content__right {
+    display: none;
+  }
+  .intro__content {
+    max-width: 320px;
+    margin-top: 100px;
+  }
+  .intro__background img{
+    transform: translate(30px, -50px);
+    width: 90%;
+    height: 90%;
+  }
+  .intro__title {
+    margin: 0;
+    font-weight: 100;
+    font-size: 30px;
+    line-height: 60px;
+    letter-spacing: -1px;
+    color: $color-text-dark;
+  }
+  .intro__text {
+    margin-top: 24px;
+    margin-bottom: 36px;
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: -0.28125px;
+    color: $color-text;
+    max-width: 320px;
+  }
+}
+
