@@ -737,6 +737,7 @@ path {
 
   .intro__content {
     max-width: 300px;
+    margin-bottom: 0px;
   }
 
   .intro__title {
@@ -772,7 +773,7 @@ path {
 
   .intro-section {
     background-color: #F2F2F2;
-    height: 1100px;
+    height: 700px;
     position: relative;
     z-index: 1;
   }
@@ -795,13 +796,11 @@ path {
 
   .intro__content {
     max-width: 320px;
-    margin-top: 100px;
   }
 
   .intro__background img {
     transform: translate(30px, -50px);
     width: 90%;
-    height: 90%;
   }
 
   .intro__title {

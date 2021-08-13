@@ -40,7 +40,6 @@
 }
 .intro__content__right {
   background-image: url(/images/hero-phones-desktop.png), url(/images/hero-bg-desktop.png);
-
   width: 810px;
   height: 920px;
   background-repeat: no-repeat;
@@ -65,7 +64,7 @@
  
   .intro__content {
     max-width: 300px;
-    
+    margin-bottom: 0px;
   }
   .intro__title {
     margin: 0;
@@ -102,7 +101,7 @@
   }
   .intro-section {
     background-color: #F2F2F2;
-    height: 1100px;
+    height: 700px;
     position: relative;
     z-index: 1;
   }
@@ -110,6 +109,7 @@
   .intro-section__container{
     display: flex;
     flex-direction: column-reverse;
+    
   }
   .intro__background {
     background-repeat: no-repeat;
@@ -123,12 +123,12 @@
   }
   .intro__content {
     max-width: 320px;
-    margin-top: 100px;
+    // margin-top: 100px;
   }
   .intro__background img{
     transform: translate(30px, -50px);
     width: 90%;
-    height: 90%;
+    // height: 90%;
   }
   .intro__title {
     margin: 0;
@@ -147,5 +147,6 @@
     color: $color-text;
     max-width: 320px;
   }
+  
 }
 
